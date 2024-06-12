@@ -5,9 +5,13 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-
-
-#domain where this api is hosted for example : localhost:5000/docs to see swagger documentation automagically generated.
+app.mount("/static", StaticFiles(directory="static"), name="static")
+app.add_middleware(
+     CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
