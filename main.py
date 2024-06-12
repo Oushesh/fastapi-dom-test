@@ -1,6 +1,11 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI()
+
+
 
 #domain where this api is hosted for example : localhost:5000/docs to see swagger documentation automagically generated.
 
