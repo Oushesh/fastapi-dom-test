@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         let url = new URL(window.location.href);
         try {
             //satic url needed
-            const api_url = "https://heroku-backend-dom-f6f9a6e0eae5.herokuapp.com/"
+            const api_url = "https://heroku-backend-dom-f6f9a6e0eae5.herokuapp.com/";
             //let response = await fetch('http://localhost:8000');
             let response = await fetch(api_url);
             let data = await response.json();
