@@ -15,4 +15,7 @@
     
 
 ## Points to be Noted:
-   Heroku has an ep
+   Heroku has an ephemeral file system 
+
+## Further Improvements:
+   * 

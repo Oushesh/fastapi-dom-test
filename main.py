@@ -2,9 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-
 app = FastAPI()
-
 
 #TODO: Heroku does not like static directores. Need to add extra storage
 #to heroku
