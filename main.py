@@ -6,5 +6,9 @@ app = FastAPI()
 
 
 @app.get("/")
-def home():
-    return {"message":"Hello TutLinks.com"}
+def home():  
+    return  {
+    "Element": "USP",
+    "Class": "container container__phone",
+    "Content": "Test DOM Element 1"
+}
