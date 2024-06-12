@@ -5,7 +5,10 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+
+#TODO: Heroku does not like static directores. Need to add extra storage
+#to heroku
+##app.mount("/static", StaticFiles(directory="static"), name="static")
 app.add_middleware(
      CORSMiddleware,
     allow_origins=["*"],
